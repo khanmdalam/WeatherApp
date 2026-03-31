@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Weather App</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+<!-- CSS LINK -->
+<link rel="stylesheet" href="Weather.css">
+
+</head>
+
+<body>
+
+<div class="container">
+    <div class="card">
+
+        <h2>🌦 Weather App</h2>
+
+        <div class="search">
+            <input id="city" placeholder="Enter city">
+            <button onclick="getWeather()">🔍</button>
+            <button onclick="getLocation()">📍</button>
+        </div>
+
+        <h3 id="cityName"></h3>
+        <img id="icon">
+        <div class="temp" id="temp"></div>
+        <div id="desc"></div>
+
+        <div class="forecast" id="forecast"></div>
+
+        <div class="details">
+            <div class="item"><span>💧 Humidity</span><span id="humidity"></span></div>
+            <div class="item"><span>🌬 Wind</span><span id="wind"></span></div>
+        </div>
+
+        <p id="error"></p>
+
+    </div>
+</div>
+
+<!-- JS LINK -->
+<script src="Weather.js"></script>
+
+</body>
+</html>
